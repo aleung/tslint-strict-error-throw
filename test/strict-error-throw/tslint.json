@@ -1,0 +1,7 @@
+{
+    "rulesDirectory": ["../../lib"],
+    "rules": {
+      "strict-error-throw": true
+    }
+  }
+  
