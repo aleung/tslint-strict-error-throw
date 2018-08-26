@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "author": "Leo Liang <leoliang@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleung/tslint-strict-error-throw.git"
+  },
   "scripts": {
     "build": "rm -rf lib && tsc -p src",
     "test": "tslint --test test/strict-error-throw"
