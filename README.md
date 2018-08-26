@@ -1,13 +1,8 @@
 # tslint-strict-error-throw
 
-TSLint core rules includes `no-string-throw` which equals to ESLint `no-throw-literal`.
+This rule enhances and replaces the TSLint core rules `no-string-throw` (which equals to ESLint `no-throw-literal`).
 
-However, in `no-throw-literal` document it says:
-
-> **Known Limitations**
-> Due to the limits of static analysis, this rule cannot guarantee that you will only throw Error objects.
-
-This rule fills the missing part. It restricts that only instances or subclasses of `Error` be thrown.
+It restricts that only instances or subclasses of `Error` be thrown.
 
 **Example – Doing it right**
 
@@ -33,6 +28,8 @@ class MyError {
 }
 throw new MyError();
 ```
+
+> **Note** This rule requires type information to run. [Click](https://palantir.github.io/tslint/usage/type-checking/) to learn more.
 
 ## Install
 
